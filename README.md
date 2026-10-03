@@ -62,9 +62,13 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 ## 📸 Screenshots
 
-*(Replace the placeholder below with an actual screenshot of your running app)*
+*(Here are the application screenshots)*
 
-![App Screenshot](./public/screenshot.png)
+![Light Mode](./public/screenshot1.png)
+
+![Dark Mode Preset](./public/screenshot2dm.png)
+
+![Different Error Correction Levels](./public/screenshot3diffecl.png)
 
 ---
 *Developed with ❤️ for GDG SRM Recruitments.*
