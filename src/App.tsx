@@ -73,13 +73,13 @@ export default function App() {
         newValue = inputData.text;
         break;
       case 'email':
-        newValue = \`mailto:\${inputData.emailTo}?subject=\${encodeURIComponent(inputData.emailSubject)}&body=\${encodeURIComponent(inputData.emailBody)}\`;
+        newValue = `mailto:${inputData.emailTo}?subject=${encodeURIComponent(inputData.emailSubject)}&body=${encodeURIComponent(inputData.emailBody)}`;
         break;
       case 'phone':
-        newValue = \`tel:\${inputData.phone}\`;
+        newValue = `tel:${inputData.phone}`;
         break;
       case 'wifi':
-        newValue = \`WIFI:T:\${inputData.wifiEncryption};S:\${inputData.wifiSsid};P:\${inputData.wifiPassword};\${inputData.wifiHidden ? 'H:true' : ''};\`;
+        newValue = `WIFI:T:${inputData.wifiEncryption};S:${inputData.wifiSsid};P:${inputData.wifiPassword};${inputData.wifiHidden ? 'H:true' : ''};`;
         break;
     }
     setSettings((s) => ({ ...s, value: newValue }));
@@ -105,7 +105,7 @@ export default function App() {
       const url = canvas.toDataURL('image/png');
       const a = document.createElement('a');
       a.href = url;
-      a.download = \`qr-code-\${Date.now()}.png\`;
+      a.download = `qr-code-${Date.now()}.png`;
       a.click();
       saveRecent();
     }
