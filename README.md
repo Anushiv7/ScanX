@@ -1,32 +1,70 @@
-# React + TypeScript + Vite
+# QR Code Generator & Designer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, highly customizable web application that allows users to generate and design QR codes in real-time. Built entirely in the browser using React and Tailwind CSS, without requiring any backend.
 
-Currently, two official plugins are available:
+This project was built as a submission for the **GDG on Campus, SRM Recruitments 2026-27 (Technical Domain)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+*(You can add your Vercel or Netlify link here once deployed!)*
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-time Generation**: Instant QR code rendering as you type or tweak settings.
+- **Multiple Data Types Supported**:
+  - 🔗 URL
+  - 📝 Plain Text
+  - ✉️ Email (with Subject and Body formatting)
+  - 📞 Phone Number
+  - 📶 Wi-Fi (Automatically formatted for Android/iOS scanning)
+- **Deep Customization**:
+  - Choose foreground and background colors.
+  - Adjust Error Correction Levels (L, M, Q, H) to maintain scan reliability.
+  - Set custom padding and margins.
+- **Design Presets**: Quick-select aesthetic combinations (e.g., *Blue Vibe*, *Dark Mode*).
+- **History (Recent QR Codes)**: The app locally saves up to 10 of your recently generated QR codes for easy reuse even after page reloads.
+- **Instant Download**: Download your customized QR code reliably as a PNG.
+- **Responsive Layout**: Designed for seamless use on both mobile devices and desktop screens.
 
-## Expanding the Oxlint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Frontend Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **QR Code Engine**: [qrcode.react](https://github.com/zpao/qrcode.react)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 💻 Getting Started Locally
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+To run this project on your local machine, follow these steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
+
+### Installation
+
+1. **Clone the repository:**
+   \`\`\`bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   \`\`\`
+
+2. **Install dependencies:**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Start the development server:**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+4. Open your browser and navigate to \`http://localhost:5173\`.
+
+## 📸 Screenshots
+
+*(Replace the placeholder below with an actual screenshot of your running app)*
+
+![App Screenshot](./public/screenshot.png)
+
+---
+*Developed with ❤️ for GDG SRM Recruitments.*
